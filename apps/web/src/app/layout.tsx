@@ -19,7 +19,7 @@ import 'simplebar-react/dist/simplebar.min.css';
 const PostHogPageView = dynamic(
   () => import('../components/posthog-page-view'),
   {
-    ssr: false,
+    ssr: true,
   }
 );
 

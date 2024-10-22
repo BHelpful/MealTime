@@ -14,12 +14,12 @@
     "e2e:ci": "turbo e2e:ci"
   },
   "devDependencies": {
-    "turbo": "^2.0.9"
+    "turbo": "^2.2.3"
   },
   "resolutions": {
     "@opentelemetry/api": "1.9.0"
   },
   "dependencies": {
-    "playwright": "^1.45.3"
+    "playwright": "^1.48.1"
   }
 }

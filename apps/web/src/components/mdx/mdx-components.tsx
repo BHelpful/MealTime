@@ -107,7 +107,7 @@ const components = {
     ...props
   }: React.ImgHTMLAttributes<HTMLImageElement>) => (
     // eslint-disable-next-line @next/next/no-img-element
-    <img className={cn('rounded-md', className)} alt={alt} {...props} />
+    (<img className={cn('rounded-md', className)} alt={alt} {...props} />)
   ),
   hr: ({ ...props }: React.HTMLAttributes<HTMLHRElement>) => (
     <hr className="my-4 md:my-8" {...props} />
@@ -179,8 +179,8 @@ export function Mdx({ code }: MdxProps) {
 
   return (
     // eslint-disable-next-line tailwindcss/no-custom-classname
-    <div className="mdx">
+    (<div className="mdx">
       <Component components={components} />
-    </div>
+    </div>)
   );
 }
